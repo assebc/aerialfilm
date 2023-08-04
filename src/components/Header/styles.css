@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    justify-content: center;
+    height: 12vh;
+    background-color: #212122;
+}
+
+.navbar{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    width: 200px;
+    display: flex;
+}
+
+.button_dropdown button{
+    color: #DB0101;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button_dropdown button:hover{
+    color: #FFFFFF !important;
+    font-size: 18px;
+    font-weight: bold;
+}

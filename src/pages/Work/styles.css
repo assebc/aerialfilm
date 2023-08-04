@@ -1,0 +1,16 @@
+.single_header{
+    margin: 64px 0;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.desc_video h6{
+    color:#FFFFFF;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.desc_video span{
+    color:#969696;
+    font-weight: bold;
+}

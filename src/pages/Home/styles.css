@@ -1,0 +1,112 @@
+.video_wrapper_home{
+    width: 100vw;
+    height: 56vh;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+    .video_wrapper_home video {
+        width: 100vw;
+        height: 60%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+.over_text_home{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    color: #FFFFFF;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    z-index: 1;
+}
+
+    .over_text_home h1{
+        font-size: 48px;
+    }
+
+    .over_text_home h3{
+        font-size: 24px;
+        font-weight: normal;
+        margin-bottom: 12px;
+    }
+
+    .over_text_home button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16%;
+        height: 12%;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #000000;
+    }
+
+    .over_text_home button:hover{
+        border-color: #DB0101 !important;
+        background-color: #DB0101;
+        color: #FFFFFF !important;
+    }
+
+.bio_wrapper{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+    .bio_wrapper h1{
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    .bio_wrapper p{
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .bio_wrapper button{
+        color: #FFFFFF;
+        margin-top: 12px;
+        background-color: transparent;
+    }
+    
+    .bio_wrapper button:hover{
+        border-color: #DB0101 !important;
+        background-color: #DB0101;
+        color: #FFFFFF !important;
+    }
+
+.quick_bio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.navigate_avatars{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .navigate_avatars .avatars{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    
+        .navigate_avatars .avatars .desc{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+            .navigate_avatars .avatars .desc h1{
+                margin-top: 16px;
+            }

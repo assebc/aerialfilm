@@ -1,0 +1,13 @@
+.middle_text{
+    height: 69vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    flex-direction: column;
+    font-size: 32px;
+}
+
+.middle_text span{
+    font-size: 28px;
+}

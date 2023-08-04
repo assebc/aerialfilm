@@ -1,0 +1,157 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video_wrapper {
+  width: 100vw;
+  height: 40vh;
+  margin-bottom: 64px;
+  display: flex;
+}
+
+.video_wrapper video {
+  width: 100vw;
+  height: 40%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.over_text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+.left_over_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.right_over_text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #ffffff;
+  font-size: 11px;
+}
+
+.form_wrapper h1 {
+  font-size: 11px;
+  color: #ffffff;
+  padding-bottom: 48px;
+}
+
+.form_wrapper span{
+  color: #db0101;
+}
+
+.inputs_wrapper {
+  width: 100%;
+  color: #ffffff;
+}
+
+.inputs_wrapper input {
+  background-color: #424242;
+  color: #ffffff;
+  font-size: 11px;
+  height: 48px;
+  border: none;
+}
+
+.inputs_wrapper input:hover {
+  border: 1px solid #db0101;
+}
+
+.inputs_wrapper input:focus {
+  border: 1px solid #db0101;
+}
+
+.text_area {
+  background-color: #424242;
+  color: #ffffff;
+  border: none;
+  .right_over_text h1 {
+    font-size: 28px;
+  }
+}
+
+.form_wrapper {
+  width: 1280px;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form_wrapper h1 {
+  font-size: 11px;
+  color: #ffffff;
+  padding-bottom: 48px;
+}
+
+.text_area:focus {
+  border: 1px solid #db0101;
+}
+
+.button {
+  display: flex;
+  justify-content: right;
+}
+
+.button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  text-align: right;
+}
+
+.button button:hover {
+  color: #db0101 !important;
+}
+.inputs_wrapper {
+  width: 100%;
+  color: #ffffff;
+}
+
+.inputs_wrapper input {
+  background-color: #424242;
+  color: #ffffff;
+  font-size: 11px;
+  height: 48px;
+  border: none;
+  margin: 12px 0;
+}
+
+.inputs_wrapper input:hover {
+  border: 1px solid #db0101;
+}
+
+.inputs_wrapper input:focus {
+  border: 1px solid #db0101;
+}
+
+.text_area {
+  background-color: #424242;
+  color: #ffffff;
+  border: none;
+  margin: 12px 0;
+}
+
+.text_area:hover {
+  border: 1px solid #db0101;
+}
+
+.text_area:focus {
+  border: 1px solid #db0101;
+}

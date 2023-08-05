@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 28px;
 }
 
@@ -40,44 +40,44 @@
   display: flex;
   align-items: center;
   height: 100%;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 11px;
 }
 
 .form_wrapper h1 {
   font-size: 11px;
-  color: #ffffff;
+  color: #FFFFFF;
   padding-bottom: 48px;
 }
 
 .form_wrapper span{
-  color: #db0101;
+  color: #DB0101;
 }
 
 .inputs_wrapper {
   width: 100%;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .inputs_wrapper input {
   background-color: #424242;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 11px;
   height: 48px;
   border: none;
 }
 
 .inputs_wrapper input:hover {
-  border: 1px solid #db0101;
+  border: 1px solid #DB0101;
 }
 
 .inputs_wrapper input:focus {
-  border: 1px solid #db0101;
+  border: 1px solid #DB0101;
 }
 
 .text_area {
   background-color: #424242;
-  color: #ffffff;
+  color: #FFFFFF;
   border: none;
   .right_over_text h1 {
     font-size: 28px;
@@ -92,24 +92,26 @@
 
 .form_wrapper h1 {
   font-size: 11px;
-  color: #ffffff;
+  color: #FFFFFF;
   padding-bottom: 48px;
 }
 
 .text_area:focus {
-  border: 1px solid #db0101;
+  border: 1px solid #DB0101;
 }
 
 .button {
   display: flex;
   justify-content: right;
+  color: #FFFFFF !important;
+
 }
 
 .button button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #FFFFFF !important;
   font-size: 18px;
   background-color: transparent;
   border: none;
@@ -117,16 +119,25 @@
 }
 
 .button button:hover {
-  color: #db0101 !important;
+  color: #DB0101 !important;
 }
+
+.button span{
+  color: #FFFFFF !important;
+}
+
+.button span:hover{
+  color: #DB0101 !important;
+}
+
 .inputs_wrapper {
   width: 100%;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .inputs_wrapper input {
   background-color: #424242;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 11px;
   height: 48px;
   border: none;
@@ -134,16 +145,16 @@
 }
 
 .inputs_wrapper input:hover {
-  border: 1px solid #db0101;
+  border: 1px solid #DB0101;
 }
 
 .inputs_wrapper input:focus {
-  border: 1px solid #db0101;
+  border: 1px solid #DB0101;
 }
 
 .text_area {
   background-color: #424242;
-  color: #ffffff;
+  color: #FFFFFF;
   border: none;
   margin: 12px 0;
 }

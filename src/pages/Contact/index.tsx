@@ -70,7 +70,7 @@ export const Contact: FC = () => {
               }}
             >
               <label htmlFor="name"><span>*</span> FULL NAME</label>
-              <Input type="text" name="name" />
+              <Input type="text" name="name" autoComplete="no" />
             </Col>
 
             <Col
@@ -83,7 +83,7 @@ export const Contact: FC = () => {
               }}
             >
               <label htmlFor="email"><span>*</span> EMAIL</label>
-              <Input type="email" name="email" />
+              <Input type="email" name="email" autoComplete="no"/>
             </Col>
           </Row>
 
@@ -98,7 +98,7 @@ export const Contact: FC = () => {
               }}
             >
               <label htmlFor="company"><span>*</span> COMPANY</label>
-              <Input type="text" name="company" />
+              <Input type="text" name="company" autoComplete="no"/>
             </Col>
 
             <Col
@@ -111,7 +111,7 @@ export const Contact: FC = () => {
               }}
             >
               <label htmlFor="phone_number">PHONE NUMBER</label>
-              <Input type="number" name="phone_number" />
+              <Input type="number" name="phone_number" autoComplete="no"/>
             </Col>
           </Row>
 
@@ -125,7 +125,7 @@ export const Contact: FC = () => {
               }}
             >
               <label htmlFor="message"><span>*</span> MESSAGE</label>
-              <TextArea name="message" rows={3} className="text_area"/>
+              <TextArea name="message" rows={3} className="text_area" autoComplete="no"/>
             </Col>
           </Row>
           <Row style={{ 

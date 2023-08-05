@@ -45,13 +45,13 @@ export const Footer: FC = () => {
             
             <div className="credits">
                 
-                AerialFilm {new Date().getFullYear()} Created by{" "} 
+                AerialFilm {new Date().getFullYear()} Created by {" "} 
                 <a
-                    href="https://github.com/assebc" 
+                    href="https://bitsway.dev" 
                     target="_blank"
                     style={{color: "#DB0101"}}  
                 >
-                    @assebc
+                    bitsway
                 </a>
                 .
             </div>

@@ -19,10 +19,10 @@ export const Contact: FC = () => {
     ) {
       emailjs
         .sendForm(
-          "service_ewjd3ie",
-          "template_rn7fy3m",
+          "service_10ygweq",
+          "template_entlgn8",
           formRef.current!,
-          "p6JsIMUF0HcDrY3qW"
+          "v8bEMowzuuy-uAzAg"
         )
         .then(
           (result) => {

@@ -80,7 +80,7 @@ export const Contact: FC = () => {
               <label htmlFor="name">
                 <span>*</span> FULL NAME
               </label>
-              <Input type="text" name="name" autoComplete="off" />
+              <Input type="text" name="name" autoComplete="new-password" />
             </Col>
 
             <Col

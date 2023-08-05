@@ -11,7 +11,12 @@ export const Contact: FC = () => {
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
 
-    if(formRef.current.name.value && formRef.current.company.value && formRef.current.email.value && formRef.current.message.value){
+    if (
+      formRef.current.name.value &&
+      formRef.current.company.value &&
+      formRef.current.email.value &&
+      formRef.current.message.value
+    ) {
       emailjs
         .sendForm(
           "service_ewjd3ie",
@@ -26,13 +31,11 @@ export const Contact: FC = () => {
           },
           (error) => {
             if (error)
-              message.error(
-                "Error while sending your email, try again later!"
-              );
+              message.error("Error while sending your email, try again later!");
           }
         );
     } else {
-      message.error("Please fill the form!")
+      message.error("Please fill the form!");
     }
   };
 
@@ -58,7 +61,12 @@ export const Contact: FC = () => {
       <div className="form_wrapper">
         <h1>{"WE LOOK FORWARD TO HEARING ABOUT YOUR PROJECT."}</h1>
 
-        <form ref={formRef} onSubmit={sendEmail} className="inputs_wrapper">
+        <form
+          autoComplete="new-password"
+          ref={formRef}
+          onSubmit={sendEmail}
+          className="inputs_wrapper"
+        >
           <Row gutter={16}>
             <Col
               span={12}
@@ -69,8 +77,10 @@ export const Contact: FC = () => {
                 color: "white",
               }}
             >
-              <label htmlFor="name"><span>*</span> FULL NAME</label>
-              <Input type="text" name="name" autoComplete="no" />
+              <label htmlFor="name">
+                <span>*</span> FULL NAME
+              </label>
+              <Input type="text" name="name" autoComplete="new-password" />
             </Col>
 
             <Col
@@ -82,8 +92,10 @@ export const Contact: FC = () => {
                 color: "white",
               }}
             >
-              <label htmlFor="email"><span>*</span> EMAIL</label>
-              <Input type="email" name="email" autoComplete="no"/>
+              <label htmlFor="email">
+                <span>*</span> EMAIL
+              </label>
+              <Input type="email" name="email" autoComplete="new-password" />
             </Col>
           </Row>
 
@@ -97,8 +109,10 @@ export const Contact: FC = () => {
                 color: "white",
               }}
             >
-              <label htmlFor="company"><span>*</span> COMPANY</label>
-              <Input type="text" name="company" autoComplete="no"/>
+              <label htmlFor="company">
+                <span>*</span> COMPANY
+              </label>
+              <Input type="text" name="company" autoComplete="off" />
             </Col>
 
             <Col
@@ -111,7 +125,11 @@ export const Contact: FC = () => {
               }}
             >
               <label htmlFor="phone_number">PHONE NUMBER</label>
-              <Input type="number" name="phone_number" autoComplete="no"/>
+              <Input
+                type="number"
+                name="phone_number"
+                autoComplete="new-password"
+              />
             </Col>
           </Row>
 
@@ -124,15 +142,24 @@ export const Contact: FC = () => {
                 color: "white",
               }}
             >
-              <label htmlFor="message"><span>*</span> MESSAGE</label>
-              <TextArea name="message" rows={3} className="text_area" autoComplete="no"/>
+              <label htmlFor="message">
+                <span>*</span> MESSAGE
+              </label>
+              <TextArea
+                name="message"
+                rows={3}
+                className="text_area"
+                autoComplete="off"
+              />
             </Col>
           </Row>
-          <Row style={{ 
-            marginTop: 24, 
-            display: "flex", 
-            justifyContent: "right"
-          }}>
+          <Row
+            style={{
+              marginTop: 24,
+              display: "flex",
+              justifyContent: "right",
+            }}
+          >
             <div className="button">
               <Button htmlType="submit">SUBMIT</Button>
             </div>

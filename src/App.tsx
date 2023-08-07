@@ -9,20 +9,21 @@ import { Gear } from "./pages/Gear";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
-import "./styles.css"
+import { ROUTES } from "./configs/routes";
+import "./styles.css";
 
-const Layout : FC = () => {
+const Layout: FC = () => {
   return (
     <AntLayout className="layout">
-      <Header/>
+      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/gear" element={<Gear />} />
-        <Route path="/about-us" element={<About />} />
-        <Route path="/contact-us" element={<Contact />} />
-        <Route path="/not-found" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/not-found" replace/>} />
+        <Route path={ROUTES.HOME} element={<Home />} />
+        <Route path={ROUTES.WORK} element={<Work />} />
+        <Route path={ROUTES.GEAR} element={<Gear />} />
+        <Route path={ROUTES.ABOUT_US} element={<About />} />
+        <Route path={ROUTES.CONTACT_US} element={<Contact />} />
+        <Route path={ROUTES.NOT_FOUND} element={<NotFound />} />
+        <Route path="*" element={<Navigate to={ROUTES.NOT_FOUND} replace />} />
       </Routes>
       <Footer />
     </AntLayout>
@@ -30,7 +31,6 @@ const Layout : FC = () => {
 };
 
 function App() {
-
   return (
     <>
       <BrowserRouter>

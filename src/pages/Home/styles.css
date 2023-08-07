@@ -18,7 +18,7 @@
     display: flex;
     justify-content: end;
     align-items: flex-start;
-    color: #FFFFFF;
+    color: #ffffff;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
     z-index: 1;
@@ -46,13 +46,13 @@
     }
 
     .over_text_home button:hover{
-        border-color: #DB0101 !important;
-        background-color: #DB0101;
-        color: #FFFFFF !important;
+        border-color: #db0101 !important;
+        background-color: #db0101;
+        color: #ffffff !important;
     }
 
 .bio_wrapper{
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -67,15 +67,15 @@
     }
 
     .bio_wrapper button{
-        color: #FFFFFF;
+        color: #ffffff;
         margin-top: 12px;
         background-color: transparent;
     }
     
     .bio_wrapper button:hover{
-        border-color: #DB0101 !important;
-        background-color: #DB0101;
-        color: #FFFFFF !important;
+        border-color: #db0101 !important;
+        background-color: #db0101;
+        color: #ffffff !important;
     }
 
 .quick_bio{

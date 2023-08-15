@@ -1,12 +1,11 @@
-import { FC } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { Layout, Button } from "antd";
+import { FC, useState } from "react";
+import { Link } from "react-router-dom";
+import { Button, Layout } from "antd";
 import { ROUTES } from "../../configs/routes";
-import { handleNavigate } from "../../utils/handleNavigate";
 import "./styles.css";
 
 export const Header: FC = () => {
-  const navigate = useNavigate();
+  const [showNavOptions, setShowNavOptions] = useState(false);
 
   return (
     <Layout.Header className="header">
@@ -14,32 +13,32 @@ export const Header: FC = () => {
         <Link to={ROUTES.HOME}>
           <img src="favicon.png" alt="logo" />
         </Link>
-        <div className="button_dropdown">
-          <Button
-            type="link"
-            onClick={() => handleNavigate(navigate, ROUTES.WORK)}
-          >
-            WORK
-          </Button>
-          <Button
-            type="link"
-            onClick={() => handleNavigate(navigate, ROUTES.GEAR)}
-          >
-            GEAR
-          </Button>
-          <Button
-            type="link"
-            onClick={() => handleNavigate(navigate, ROUTES.ABOUT_US)}
-          >
-            ABOUT
-          </Button>
-          <Button
-            type="link"
-            onClick={() => handleNavigate(navigate, ROUTES.CONTACT_US)}
-          >
-            CONTACT
-          </Button>
-        </div>
+
+        <ul
+          className={
+            showNavOptions ? "nav_options show_nav_options" : "nav_options"
+          }
+        >
+          <li>
+            <Link to={ROUTES.WORK}>WORK</Link>
+          </li>
+          <li>
+            <Link to={ROUTES.GEAR}>GEAR</Link>
+          </li>
+          <li>
+            <Link to={ROUTES.ABOUT_US}>ABOUT</Link>
+          </li>
+          <li>
+            <Link to={ROUTES.CONTACT_US}>CONTACT</Link>
+          </li>
+        </ul>
+
+        <Button
+          className="hamburguer"
+          onClick={() => setShowNavOptions((prev) => !prev)}
+        >
+          X
+        </Button>
       </div>
     </Layout.Header>
   );

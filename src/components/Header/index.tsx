@@ -1,13 +1,9 @@
 import { FC } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { Layout, Button } from "antd";
+import { Link } from "react-router-dom";
 import { ROUTES } from "../../configs/routes";
-import { handleNavigate } from "../../utils/handleNavigate";
 import "./styles.css";
 
 export const Header: FC = () => {
-  const navigate = useNavigate();
-
   return (
     <header className="header">
       <nav>

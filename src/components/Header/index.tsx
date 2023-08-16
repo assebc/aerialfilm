@@ -1,46 +1,41 @@
 import { FC } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { Layout, Button } from "antd";
+import { Link } from "react-router-dom";
 import { ROUTES } from "../../configs/routes";
-import { handleNavigate } from "../../utils/handleNavigate";
 import "./styles.css";
 
 export const Header: FC = () => {
-  const navigate = useNavigate();
-
   return (
-    <Layout.Header className="header">
-      <div className="navbar">
-        <Link to={ROUTES.HOME}>
-          <img src="favicon.png" alt="logo" />
-        </Link>
-        <div className="button_dropdown">
-          <Button
-            type="link"
-            onClick={() => handleNavigate(navigate, ROUTES.WORK)}
-          >
-            WORK
-          </Button>
-          <Button
-            type="link"
-            onClick={() => handleNavigate(navigate, ROUTES.GEAR)}
-          >
-            GEAR
-          </Button>
-          <Button
-            type="link"
-            onClick={() => handleNavigate(navigate, ROUTES.ABOUT_US)}
-          >
-            ABOUT
-          </Button>
-          <Button
-            type="link"
-            onClick={() => handleNavigate(navigate, ROUTES.CONTACT_US)}
-          >
-            CONTACT
-          </Button>
+    <header className="header">
+      <nav>
+        <div className="logo">
+          <a href="index.html">AerialFilm</a>
         </div>
-      </div>
-    </Layout.Header>
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          style={{ border: "1px solid red" }}
+        />
+        <label htmlFor="menu-toggle" className="menu-icon">
+          &#9776;
+        </label>
+        <ul className="menu">
+          <li>
+            <Link to={ROUTES.WORK}>WORK</Link>
+          </li>
+
+          <li>
+            <Link to={ROUTES.GEAR}>GEAR</Link>
+          </li>
+
+          <li>
+            <Link to={ROUTES.ABOUT_US}>ABOUT</Link>
+          </li>
+
+          <li>
+            <Link to={ROUTES.CONTACT_US}>CONTACT</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };

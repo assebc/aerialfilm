@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Layout, Avatar, Space, Row, Col } from "antd";
+import { Layout, Avatar, Row, Col } from "antd";
 import { InstagramOutlined, MailOutlined } from "@ant-design/icons";
 import "./styles.css";
 

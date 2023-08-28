@@ -8,7 +8,7 @@ export const Header: FC = () => {
     <header className="header">
       <nav>
         <div className="logo">
-          <a href="index.html">AerialFilm</a>
+          <a href={ROUTES.HOME}>AerialFilm</a>
         </div>
         <input
           type="checkbox"

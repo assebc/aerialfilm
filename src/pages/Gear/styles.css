@@ -6,9 +6,9 @@
     color: #ffffff;
 }
 
-    .division h1{
-        font-size: 36px;
-    }
+.division h1{
+    font-size: 36px;
+}
 
 .left_division{
     display: flex;
@@ -19,9 +19,9 @@
     font-weight: bold;
 }
 
-    .left_division span{
-        color:#969696;
-    }
+.left_division span,.right_division span{
+    color:#969696;
+}
     
 .right_division{
     display: flex;
@@ -30,7 +30,3 @@
     flex-direction: column;
     font-weight: bold;
 }
-
-    .right_division span{
-        color:#969696;
-    }

@@ -4,10 +4,17 @@
     color: #ffffff;
 }
 
+.desc_video {
+    display: flex;
+    justify-content: center;
+
+}
+
 .desc_video h6{
     color:#ffffff;
     font-size: 16px;
     font-weight: lighter;
+
 }
 
 .desc_video span{

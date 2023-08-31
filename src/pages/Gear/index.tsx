@@ -1,35 +1,31 @@
-import { Image } from "antd";
+import { Col, Image, Row } from "antd";
 import { FC } from "react";
 import "./styles.css";
 
-export const Gear : FC = ({}) => {
+export const Gear : FC = () => {
     return (
         <div className="body">
-            <div className="division">
-                <div className="left_division">
+            <Row className="division">
+                <Col md={12} sm={24} xs={24} className="left_division">
                     <h1>CINEMA FPV</h1>
-                </div>
+                </Col>
 
-                <div className="right_division">
+                <Col md={12} sm={24} xs={24} className="right_division">
                     <Image src="images/drone_fpv.png" width={400} height={400} />
                     <span>TITAN XL5</span>
-                </div>
-
-                        
-            </div>
+                </Col>     
+            </Row>
                 
-            <div className="division"> 
-                <div className="left_division">
-                    <Image src="images/drone_aerial.png" width={600} height={400} />
+            <Row className="division"> 
+                <Col md={12} sm={24} xs={24} className="left_division">
+                    <Image src="images/drone_aerial.png" width={500} height={400} />
                     <span>DJI MINI 3 PRO</span>
-                </div>
+                </Col>
 
-                <div className="right_division">
+                <Col md={12} sm={24} xs={24} className="right_division">
                     <h1>AERIAL CINEMA</h1>
-                </div>
-
-                
-            </div>
+                </Col>
+            </Row>
 
             
         </div>

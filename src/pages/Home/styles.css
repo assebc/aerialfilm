@@ -6,15 +6,20 @@
     justify-content: center;
 }
 
-    .video_wrapper_home video {
-        width: 100vw;
-        height: 60%;
-        object-fit: cover;
-        position: absolute;
-    }
+.video_wrapper_home iframe {
+    width: 100vw;
+    height: 60%;
+    object-fit: cover;
+    position: absolute;
+}   
+
+.reels_btn {
+    min-width: 100px;
+}
 
 .over_text_home{
     width: 50%;
+    min-width: 250px;
     display: flex;
     justify-content: end;
     align-items: flex-start;
@@ -24,59 +29,59 @@
     z-index: 1;
 }
 
-    .over_text_home h1{
-        font-size: 48px;
-    }
+.over_text_home h1{
+    font-size: 48px;
+}
 
-    .over_text_home h3{
-        font-size: 24px;
-        font-weight: normal;
-        margin-bottom: 12px;
-    }
+.over_text_home h3{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
 
-    .over_text_home button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 16%;
-        height: 12%;
-        font-size: 16px;
-        font-weight: lighter;
-        color: #000000;
-    }
+.over_text_home button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16%;
+    height: 12%;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #000000;
+}
 
-    .over_text_home button:hover{
-        border-color: #db0101 !important;
-        background-color: #db0101;
-        color: #ffffff !important;
-    }
+.over_text_home button:hover{
+    border-color: #db0101 !important;
+    background-color: #db0101;
+    color: #ffffff !important;
+}
 
 .bio_wrapper{
     color: #ffffff;
     text-align: center;
 }
 
-    .bio_wrapper h1{
-        font-size: 22px;
-        margin-bottom: 24px;
-    }
+.bio_wrapper h1{
+    font-size: 22px;
+    margin-bottom: 24px;
+}
 
-    .bio_wrapper p{
-        font-size: 16px;
-        line-height: 32px;
-    }
+.bio_wrapper p{
+    font-size: 16px;
+    line-height: 32px;
+}
 
-    .bio_wrapper button{
-        color: #ffffff;
-        margin-top: 12px;
-        background-color: transparent;
-    }
-    
-    .bio_wrapper button:hover{
-        border-color: #db0101 !important;
-        background-color: #db0101;
-        color: #ffffff !important;
-    }
+.bio_wrapper button{
+    color: #ffffff;
+    margin-top: 12px;
+    background-color: transparent;
+}
+
+.bio_wrapper button:hover{
+    border-color: #db0101 !important;
+    background-color: #db0101;
+    color: #ffffff !important;
+}
 
 .quick_bio{
     display: flex;
@@ -86,27 +91,19 @@
     margin-bottom: 24px;
 }
 
-.navigate_avatars{
-    width: 100vw;
+.desc {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    text-align: center;
     flex-direction: column;
 }
 
-    .navigate_avatars .avatars{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-    }
-    
-        .navigate_avatars .avatars .desc{
-            display: flex;
-            align-items: center;
-            text-align: center;
-            flex-direction: column;
-        }
+.desc h1{
+    margin-top: 16px;
+}
 
-            .navigate_avatars .avatars .desc h1{
-                margin-top: 16px;
-            }
+.navigation_section {
+    margin-bottom: 40px;
+    display: grid;
+    gap: 40px;
+}

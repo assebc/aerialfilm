@@ -103,7 +103,8 @@
 }
 
 .navigation_section {
-    margin-bottom: 40px;
     display: grid;
     gap: 40px;
+    max-width: 70vw;
+    margin: 0 auto 40px;
 }

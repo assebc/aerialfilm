@@ -1,7 +1,6 @@
 import { FC, FormEvent, useRef } from "react";
 import { Button, Col, Input, Row, message } from "antd";
 import TextArea from "antd/es/input/TextArea";
-import video4 from "../../assets/videos/video4.mp4";
 import emailjs from "@emailjs/browser";
 import "./styles.css";
 
@@ -42,20 +41,21 @@ export const Contact: FC = () => {
   return (
     <div className="body">
       <div className="video_wrapper">
-        <div className="over_text">
-          <div className="left_over_text">
-            <h1>CONTACT US</h1>
-          </div>
 
-          <div className="right_over_text">
-            <h2>
-              Based in Braga, AERIALFILM has crews and resources
-              <br /> in the keyfilm production markets all around Portugal.
-            </h2>
-          </div>
-        </div>
+          <Row className="over_text">
+            <Col span={12} className="center">
+              <h1>CONTACT US</h1>
+            </Col>
+            <Col span={12} className="center">
+              <h2>
+                Based in Braga, AERIALFILM has crews and resources
+                <br /> in the keyfilm production markets all around Portugal.
+              </h2>
+            </Col>
+          </Row>
 
-        <video src={video4} loop autoPlay={true} muted />
+        <iframe src="https://www.youtube.com/embed/WBs3G1PvyfM?si=j8ZiLhkGolXTyITW&autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
+
       </div>
 
       <div className="form_wrapper">
@@ -67,15 +67,11 @@ export const Contact: FC = () => {
           onSubmit={sendEmail}
           className="inputs_wrapper"
         >
-          <Row gutter={16}>
+          <Row gutter={[16, 16]}>
             <Col
-              span={12}
+              lg={12} md={24} sm={24} xs={24}
               flex={1}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                color: "white",
-              }}
+              className="form_item"
             >
               <label htmlFor="name">
                 <span>*</span> FULL NAME
@@ -84,13 +80,9 @@ export const Contact: FC = () => {
             </Col>
 
             <Col
-              span={12}
+              lg={12} md={24} sm={24} xs={24}
               flex={1}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                color: "white",
-              }}
+              className="form_item"
             >
               <label htmlFor="email">
                 <span>*</span> EMAIL
@@ -99,15 +91,11 @@ export const Contact: FC = () => {
             </Col>
           </Row>
 
-          <Row gutter={16}>
+          <Row gutter={[16, 16]}>
             <Col
-              span={12}
+              lg={12} md={24} sm={24} xs={24}
               flex={1}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                color: "white",
-              }}
+              className="form_item"
             >
               <label htmlFor="company">
                 <span>*</span> COMPANY
@@ -116,13 +104,9 @@ export const Contact: FC = () => {
             </Col>
 
             <Col
-              span={12}
+              lg={12} md={24} sm={24} xs={24}
               flex={1}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                color: "white",
-              }}
+              className="form_item"
             >
               <label htmlFor="phone_number">PHONE NUMBER</label>
               <Input
@@ -136,11 +120,7 @@ export const Contact: FC = () => {
           <Row>
             <Col
               span={24}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                color: "white",
-              }}
+              className="form_item"
             >
               <label htmlFor="message">
                 <span>*</span> MESSAGE

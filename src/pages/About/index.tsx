@@ -1,26 +1,22 @@
+import { Col, Row } from "antd";
 import { FC } from "react";
-import video3 from "../../assets/videos/video3.mp4"
 
-export const About : FC = ({}) => {
+export const About : FC = () => {
 
     return (
+        <div className="video_wrapper_home">
+            <Row gutter={[16, 16]} className="over_text">
+                <Col md={12} sm={24} xs={24} className="left_over_text">
+                    <h1>OUR STORY</h1>
+                </Col>
+                <Col md={12} sm={24} xs={24} className="right_over_text">
+                    <h2>AERIALFILM is one of few pioneer in the portuguese 
+                        <br />drone cinematography space.
+                    </h2>
+                </Col>
+            </Row>
 
-        <>
-            <div className="video_wrapper_home">
-                <div className="over_text">
-                    <div className="left_over_text">
-                        <h1>OUR STORY</h1>
-                    </div>
-                    <div className="right_over_text">
-                        <h2>AERIALFILM is one of few pioneer in the portuguese 
-                            <br />drone cinematography space.
-                        </h2>
-                    </div>
-                </div>
-
-                <video src={video3} loop autoPlay={true} muted />
-
-            </div>
-        </>
+            {/* Add iframe with video */}
+        </div>
     );
 };

@@ -10,8 +10,8 @@ export const Footer: FC = () => {
             <Row gutter={[16, 16]} className="socials" wrap>
                 <Col md={8} sm={24} xs={24}>
                     <div className="left_socials">
-                        CREWS & RESOURCES IN THE KEY FILM <br/>
-                        PRODUCTION MARKETS OF PORTUGAL
+                        EQUIPA E RECURSOS NA INDÚSTRIA DE FILME E<br/>
+                        MERCADOS DE PRODUÇÃO EM PORTUGAL
                     </div>
                 </Col>
 
@@ -37,14 +37,14 @@ export const Footer: FC = () => {
 
                 <Col md={8} sm={24} xs={24}>
                     <div className="right_socials">
-                        AERIAL CINEMATOGRAPHY & DRONE <br />
-                        PILOTING SERVICES <br />
+                        SERVIÇOS DE PILOTAGEM <br />
+                        AÉREA CINEMATOGRAFICA & DRONE
                     </div>
                 </Col>
             </Row>
             
             <div className="credits">
-                AerialFilm {new Date().getFullYear()} Created by {" "} 
+                AerialFilm {new Date().getFullYear()} Criado com &hearts; por {" "} 
                 <a
                     href="https://bitsway.dev" 
                     target="_blank"

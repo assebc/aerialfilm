@@ -26,14 +26,14 @@ export const NotFound: FC = () => {
 
     return (
       <>
-        <span>REDIRECTING TO HOME PAGE IN {counter} ...</span>
+        <span>REDIRENCIONANDO PARA A PÁGINA PRINCIPAL EM {counter} ...</span>
       </>
     );
   };
 
   return (
     <div className="middle_text">
-      <h1>NOTHING TO SEE HERE.</h1>
+      <h1>NADA PARA VER AQUI.</h1>
       <LiveCounter />
     </div>
   );

@@ -18,10 +18,10 @@ export const Home: FC = () => {
     <>
       <div className="video_wrapper_home">
         <div className="over_text_home">
-          <h1>VIEW OUR WORK</h1>
-          <h3>FEATURING OUR WORK IN ACTION SPORTS</h3>
+          <h1>VEJA O NOSSO TRABALHO</h1>
+          <h3>APRESENTANDO O NOSSO TRABALHO EM DESPORTOS DE AÇÃO</h3>
           <Button className="reels_btn" onClick={() => handleNavigate(navigate, ROUTES.WORK)}>
-            VIEW REELS
+            VER REELS
           </Button>
         </div>
 
@@ -30,12 +30,11 @@ export const Home: FC = () => {
 
       <div className="bio_wrapper">
         <div className="quick_bio">
-          <h1>DRONE CINEMATOGRAPHY EXPERTS</h1>
+          <h1>EXPERTS EM CINEMATOGRAFIA DE DRONE</h1>
           <p>
-            AERIALFILM continues to build upon their strong reputations for
-            delivering breathtaking drone cinematography
-            <br /> on some of the sport industry's most technically challenging
-            projects.
+            AERIALFILM continua a construir a sua forte reputação
+            apresentando filmagens de cortar a respiração
+            <br /> em alguns dos desportos radicais na indústria com os mais desafiantes projetos.
           </p>
         </div>
 
@@ -57,12 +56,12 @@ export const Home: FC = () => {
             />
             <h1>TOP DRONE CREWS</h1>
             <p>
-              Headed by professional aerial
-              <br /> cinematographers, our production teams deliver
-              <br /> on the directors vision.
+              Conduzido por cinematógrafos
+              <br /> aéreos profissionais, as nossas equipas de 
+              <br /> produção entregam o pretendido.
             </p>
             <Button onClick={() => handleNavigate(navigate, ROUTES.HOME)}>
-              MEET OUR TEAM
+              CONHEÇA A NOSSA EQUIPA
             </Button>
           </Col>
 
@@ -79,16 +78,16 @@ export const Home: FC = () => {
               }}
               icon={<ContactsOutlined />}
             />
-            <h1>STRATEGIC PARTNERS</h1>
+            <h1>PARCEIROS ESTRATÉGICOS</h1>
             <p>
-              We have long standing frindships and strategic
-              <br /> partnerships with several other companies
-              <br /> including other drone/aerial companies.
+              Temos longas amizades e parceiros 
+              <br /> estratégicos com muitas outras empresas
+              <br /> incluíndo outras empresas de drone.
             </p>
             <Button
               onClick={() => handleNavigate(navigate, ROUTES.ABOUT_US)}
             >
-              ABOUT US
+              ACERCA DE NÓS
             </Button>
           </Col>
         </Row>
@@ -107,14 +106,14 @@ export const Home: FC = () => {
               }}
               icon={<VideoCameraOutlined />}
             />
-            <h1>CAMERA SYSTEMS</h1>
+            <h1>EQUIPAMENTOS DE FILMAGEM</h1>
             <p>
-              We own an array of cinema/drone camera
-              <br /> systems, lensing, and stabilizers that cover a
-              <br /> variety of cinematography needs.
+              Possuímos um conjunto de drones/cinema cameras,
+              <br /> lentes, e estabilizadores que cobrem uma
+              <br /> variedade de necessidades cinematográficas.
             </p>
             <Button onClick={() => handleNavigate(navigate, ROUTES.GEAR)}>
-              OUR GEAR
+              NOSSO EQUIPAMENTO
             </Button>
           </Col>
 
@@ -131,16 +130,16 @@ export const Home: FC = () => {
               }}
               icon={<TeamOutlined />}
             />
-            <h1>COLLABORATION</h1>
+            <h1>COLABORAÇÃO</h1>
             <p>
-              Our team of industry professionals has vast
-              <br /> experience coordinating with studio cews form
-              <br /> pre-through post-production.
+              A nossa equipa de professionais tem uma vasta
+              <br /> experiência a coordenar com a equipa de estúdio
+              <br /> que efetua a pre-processamento e a pós-produção.
             </p>
             <Button
               onClick={() => handleNavigate(navigate, ROUTES.CONTACT_US)}
             >
-              CONTACT US
+              CONTACTE-NOS
             </Button>
           </Col>
         </Row>

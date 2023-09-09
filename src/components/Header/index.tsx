@@ -8,7 +8,7 @@ export const Header: FC = () => {
     <header className="header">
       <nav>
         <div className="logo">
-          <a href={ROUTES.HOME}>AerialFilm</a>
+          <a href={ROUTES.HOME}><img src={"/favicon.png"} style={{width: "28%"}}/></a>
         </div>
         <input
           type="checkbox"
@@ -20,19 +20,19 @@ export const Header: FC = () => {
         </label>
         <ul className="menu">
           <li>
-            <Link to={ROUTES.WORK}>WORK</Link>
+            <Link to={ROUTES.WORK}>TRABALHOS</Link>
           </li>
 
           <li>
-            <Link to={ROUTES.GEAR}>GEAR</Link>
+            <Link to={ROUTES.GEAR}>EQUIPAMENTOS</Link>
           </li>
 
           <li>
-            <Link to={ROUTES.ABOUT_US}>ABOUT</Link>
+            <Link to={ROUTES.ABOUT_US}>ACERCA</Link>
           </li>
 
           <li>
-            <Link to={ROUTES.CONTACT_US}>CONTACT</Link>
+            <Link to={ROUTES.CONTACT_US}>CONTACTOS</Link>
           </li>
         </ul>
       </nav>

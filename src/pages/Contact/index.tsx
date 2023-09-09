@@ -26,15 +26,15 @@ export const Contact: FC = () => {
         .then(
           (result) => {
             if (result.status === 200)
-              message.success("Email sent with success!");
+              message.success("Email enviado com sucesso!");
           },
           (error) => {
             if (error)
-              message.error("Error while sending your email, try again later!");
+              message.error("Erro no envio do seu email, tente mais tarde!");
           }
         );
     } else {
-      message.error("Please fill the form!");
+      message.error("Por favor, preencha o formulário!");
     }
   };
 
@@ -48,8 +48,8 @@ export const Contact: FC = () => {
             </Col>
             <Col span={12} className="center">
               <h2>
-                Based in Braga, AERIALFILM has crews and resources
-                <br /> in the keyfilm production markets all around Portugal.
+                Com sede em Braga, AERIALFILM tem equipas e recursos
+                <br /> no mercado de filmagem e produção em todo Portugal.
               </h2>
             </Col>
           </Row>
@@ -59,7 +59,7 @@ export const Contact: FC = () => {
       </div>
 
       <div className="form_wrapper">
-        <h1>{"WE LOOK FORWARD TO HEARING ABOUT YOUR PROJECT."}</h1>
+        <h1>{"ESPERAMOS PARA SABER MAIS SOBRE O SEU PROJETO."}</h1>
 
         <form
           autoComplete="new-password"
@@ -74,7 +74,7 @@ export const Contact: FC = () => {
               className="form_item"
             >
               <label htmlFor="name">
-                <span>*</span> FULL NAME
+                <span>*</span> NOME COMPLETO
               </label>
               <Input type="text" name="name" autoComplete="new-password" />
             </Col>
@@ -98,7 +98,7 @@ export const Contact: FC = () => {
               className="form_item"
             >
               <label htmlFor="company">
-                <span>*</span> COMPANY
+                <span>*</span> EMPRESA
               </label>
               <Input type="text" name="company" autoComplete="off" />
             </Col>
@@ -108,7 +108,7 @@ export const Contact: FC = () => {
               flex={1}
               className="form_item"
             >
-              <label htmlFor="phone_number">PHONE NUMBER</label>
+              <label htmlFor="phone_number">TELEFONE</label>
               <Input
                 type="number"
                 name="phone_number"
@@ -123,7 +123,7 @@ export const Contact: FC = () => {
               className="form_item"
             >
               <label htmlFor="message">
-                <span>*</span> MESSAGE
+                <span>*</span> MENSAGEM
               </label>
               <TextArea
                 name="message"
@@ -141,7 +141,7 @@ export const Contact: FC = () => {
             }}
           >
             <div className="button">
-              <Button htmlType="submit">SUBMIT</Button>
+              <Button htmlType="submit">SUBMETER</Button>
             </div>
           </Row>
         </form>

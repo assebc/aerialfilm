@@ -6,7 +6,7 @@ export const Work : FC = () => {
     return (
         <div className="body">
             <div className="single_header">
-                <h1>VIEW OUR VARIOUS REELS OVER THE LAST SEVERAL MONTHS.</h1>
+                <h1>VEJA OS NOSSOS DIVERSOS REEL AO LONGO DOS ÚLTIMOS MESES.</h1>
             </div>
 
             <Row gutter={[0, 50]}>

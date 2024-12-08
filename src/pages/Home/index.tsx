@@ -25,7 +25,7 @@ export const Home: FC = () => {
           </Button>
         </div>
 
-        <iframe src="https://www.youtube.com/embed/WBs3G1PvyfM?si=j8ZiLhkGolXTyITW&autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
+        <iframe src="https://www.youtube.com/embed/RUXMWmKgDNk?si=A4M8Nptwqc2GR5kE&autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
       </div>
 
       <div className="bio_wrapper">

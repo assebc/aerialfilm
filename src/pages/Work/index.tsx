@@ -31,7 +31,7 @@ export const Work : FC = () => {
                 </Row>
 
                 <Row gutter={[16, 16]} justify={"center"} align={"middle"} style={{width:"100%"}}>
-                    <Col md={20} sm={40} xs={40} className="desc_video">
+                    <Col md={12} sm={24} xs={24} className="desc_video">
                         <div>
                             <iframe src="https://www.youtube.com/embed/Qxj6xobxumc?si=uCG309uer18YnECG&autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
 

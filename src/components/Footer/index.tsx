@@ -46,11 +46,11 @@ export const Footer: FC = () => {
             <div className="credits">
                 AerialFilm {new Date().getFullYear()} Created by {" "} 
                 <a
-                    href="https://bitsway.dev" 
+                    href="https://cbessa.pt" 
                     target="_blank"
                     style={{color: "#DB0101"}}  
                 >
-                    bitsway
+                    Bessa
                 </a>
                 .
             </div>
